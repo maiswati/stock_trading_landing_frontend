@@ -2,8 +2,8 @@ import React from 'react'
 
 const SignupPage = () => {
   return (
-    <div>
-      Sign Up Page
+    <div className='p-5'>
+      <h1>Sign Up Page</h1>
     </div>
   )
 }

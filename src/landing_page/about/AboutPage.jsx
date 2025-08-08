@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from './Hero'
 
 const AboutPage = () => {
   return (
     <div>
-      AboutPage
+      <Hero/>
     </div>
   )
 }
