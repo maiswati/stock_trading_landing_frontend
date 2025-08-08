@@ -41,6 +41,7 @@ Now, we are breaking ground with our technology.</h3>
       </div>
       <hr />
       <div className="row mt-5 p-5">
+        <h1 className='text-center mb-5'>People</h1>
 <div className="col-lg-2"></div>
 <div className="col-lg-4 text-center">
   <div>
