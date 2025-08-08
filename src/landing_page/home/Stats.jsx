@@ -19,9 +19,10 @@ const Stats = () => {
         <div className="col-lg-6 col-sm-12 p-5 mt-5 text-sm-center">
           <img style={{width:"100%"}} src={ecosystem} alt="ecosystem" />
           <div className="row">
-            <div className='col-lg-6 col-sm-12'>
-              <a href="" style={{textDecoration:"none"}}>Explore our products <i class="fa-solid fa-arrow-right"></i></a>
+            <div className='col-lg-6 col-sm-12' style={{textDecoration:"none"}}>
+              <a href="/product" style={{textDecoration:"none"}}>Explore our products <i class="fa-solid fa-arrow-right"></i></a>
             </div>
+            
             <div className='col-lg-6 col-sm-12'>
               <a href="" style={{textDecoration:"none"}}>Try kite <i class="fa-solid fa-arrow-right"></i></a>
             </div>

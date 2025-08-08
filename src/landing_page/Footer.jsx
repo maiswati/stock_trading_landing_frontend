@@ -3,6 +3,8 @@ import logo from '../assets/logo.svg';
 
 const Footer = () => {
   return (
+    <>
+    <hr />
     <div className='container mt-5 '>
       <div className="row">
         <div className="col-3">
@@ -83,6 +85,7 @@ const Footer = () => {
 </p>
       </div>
     </div>
+    </>
   )
 }
 
