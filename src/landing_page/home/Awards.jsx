@@ -7,7 +7,7 @@ const Awards = () => {
     <div className="container mt-5 text-sm-center mb-5">
       <div className="row">
         <div className="col-lg-6 col-sm-12 p-5">
-          <img className="img-fluid rounded shadow" src={largestBroker} alt="largestBroker" />
+          <img className="img-fluid" src={largestBroker} alt="largestBroker" />
         </div>
         <div className="col-lg-6 col-sm-12 p-5 mt-5">
           <h1>Largest stock broker in India</h1>

@@ -10,7 +10,7 @@ const RightImage = ({heading, description, link, heroImage}) => {
           <a style={{textDecoration:"none"}} href="">{link} <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div className="col-lg-6 col-sm-12">
-          <img className="img-fluid rounded shadow" src={heroImage} alt="heroImage" />
+          <img className="img-fluid" src={heroImage} alt="heroImage" />
         </div>
       </div>
       

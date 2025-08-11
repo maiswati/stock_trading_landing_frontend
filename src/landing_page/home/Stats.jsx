@@ -17,7 +17,7 @@ const Stats = () => {
           <p className='pb-3'>With initiatives like Nudge and Kill Switch, we don't just facilitate transactions, but actively help you do better with your money.</p>
         </div>
         <div className="col-lg-6 col-sm-12 p-5 mt-5 text-sm-center">
-          <img className="img-fluid rounded shadow" src={ecosystem} alt="ecosystem" />
+          <img className="img-fluid" src={ecosystem} alt="ecosystem" />
           <div className="row">
             <div className='col-lg-6 col-sm-12' style={{textDecoration:"none"}}>
               <a href="/product" style={{textDecoration:"none"}}>Explore our products <i class="fa-solid fa-arrow-right"></i></a>
