@@ -7,7 +7,7 @@ const Navbar = () => {
       style={{ backgroundColor: "white" }}
       class="navbar navbar-expand-lg border-bottom"
     >
-      <div class="container-fluid p-2">
+      <div class="container-fluid">
         <NavLink to="/">
           <a class="navbar-brand" href="#">
             <img
