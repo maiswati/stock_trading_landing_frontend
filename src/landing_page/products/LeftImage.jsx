@@ -5,7 +5,7 @@ const LeftImage = ({heroImage, heading, description, link1, link2, ad1, ad2}) =>
     <div className='container mt-5 p-5'>
       <div className="row">
         <div className="col-lg-6 col-sm-12">
-          <img src={heroImage} alt={heroImage} />
+          <img className="img-fluid rounded shadow" src={heroImage} alt={heroImage} />
         </div>
         <div className="col-lg-6 col-sm-12">
           <h1 className='mb-4'>{heading}</h1>

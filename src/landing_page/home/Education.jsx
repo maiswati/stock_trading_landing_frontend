@@ -6,7 +6,7 @@ const Education = () => {
     <div className='container mt-5 p-5'>
       <div className="row">
         <div className="col-lg-4 col-sm-12">
-          <img src={education} alt="education" />
+          <img className="img-fluid rounded shadow" src={education} alt="education" />
         </div>
         <div className="col-lg-2 col-sm-12"></div>
         <div className="col-lg-6 col-sm-12 mt-5">
