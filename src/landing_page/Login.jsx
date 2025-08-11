@@ -23,7 +23,7 @@ const Login = () => {
   return (
     <div
       className="m-auto border container mt-5 mb-5 rounded-1 shadow"
-      style={{ width: "40%" }}
+      style={{ width: "70%" }}
     >
       <div className="row text-center p-5">
         <img
