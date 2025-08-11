@@ -17,7 +17,7 @@ const Login = () => {
         console.log(res);
         setEmail("");
         setPassword("");
-        navigate("/");
+        navigate("https://herodhadashboard.netlify.app/");
       });
   };
   return (
