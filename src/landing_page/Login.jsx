@@ -1,34 +1,29 @@
 import React from "react";
-import kite from "../../assets/kite-logo.svg";
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import kite from "../assets/kite-logo.svg";
 import axios from "axios";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-const SignupPage = () => {
+const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [username, setUsername] = useState("");
-  const handleSignup = () => {
+  const handleLogin = () => {
     axios
-      .post("http://localhost:3002/signup", {
+      .post("http://localhost:3002/login", {
         email: email,
         password: password,
-        username: username,
       })
       .then((res) => {
         console.log(res);
         setEmail("");
         setPassword("");
-        setUsername("");
-        navigate("/login");
+        navigate("/");
       });
   };
-
   return (
     <div
-      className="m-auto shadow border container mt-5 mb-5 rounded-1"
-      style={{ width: "50%" }}
+      className="m-auto border container mt-5 mb-5 rounded-1 shadow"
+      style={{ width: "40%" }}
     >
       <div className="row text-center p-5">
         <img
@@ -39,47 +34,35 @@ const SignupPage = () => {
         />
       </div>
       <div className="row text-center">
-        <h2 className="fw-light">Sign up to Kite</h2>
+        <h2 className="fw-light">Login to Kite</h2>
       </div>
       <div className="row p-4">
         <input
           type="email"
-          className="form-control mb-4 m-auto"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
+          className="form-control mb-4 m-auto"
           style={{ width: "75%" }}
           placeholder="Email"
         />
         <input
           type="password"
-          className="form-control m-auto"
           onChange={(e) => setPassword(e.target.value)}
           value={password}
+          className="form-control m-auto mb-3"
           style={{ width: "75%" }}
           placeholder="Password"
         />
-        <input
-          type="text"
-          className="form-control mt-4 mb-4 m-auto"
-          onChange={(e) => setUsername(e.target.value)}
-          value={username}
-          style={{ width: "75%" }}
-          placeholder="Username"
-        />
         <button
           className="btn btn-custom m-auto"
-          onClick={handleSignup}
+          onClick={handleLogin}
           style={{ width: "75%" }}
         >
-          Sign up
+          Login
         </button>
-        <p className="text-center mt-2 mb-2">OR</p>
-        <NavLink style={{ textDecoration: "none" }} to="/login">
-          <p className="text-center">Login</p>
-        </NavLink>
       </div>
     </div>
   );
 };
 
-export default SignupPage;
+export default Login;

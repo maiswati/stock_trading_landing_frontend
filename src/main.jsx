@@ -11,12 +11,14 @@ import SupportPage from './landing_page/support/SupportPage';
 import Navbar from './landing_page/Navbar';
 import Footer from './landing_page/Footer';
 import NotFound from './landing_page/NotFound';
+import Login from './landing_page/Login';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   <Navbar/>
     <Routes>
       <Route path='/' element={<HomePage/>}/>
+      <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<SignupPage/>}/>
       <Route path='/about' element={<AboutPage/>}/>
       <Route path='/product' element={<ProductPage/>}/>
