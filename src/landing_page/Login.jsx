@@ -9,7 +9,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const handleLogin = () => {
     axios
-      .post("http://localhost:3002/login", {
+      .post("https://stock-trading-backend-j3jm.onrender.com/login", {
         email: email,
         password: password,
       })

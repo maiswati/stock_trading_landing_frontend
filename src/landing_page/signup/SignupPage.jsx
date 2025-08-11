@@ -11,7 +11,7 @@ const SignupPage = () => {
   const [username, setUsername] = useState("");
   const handleSignup = () => {
     axios
-      .post("http://localhost:3002/signup", {
+      .post("https://stock-trading-backend-j3jm.onrender.com/signup", {
         email: email,
         password: password,
         username: username,
